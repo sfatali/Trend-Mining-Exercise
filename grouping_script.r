@@ -288,7 +288,7 @@ grouping = function(text) {
   text <- gsub("amazonwebservices", "aws", text)
   text <- gsub("amazon webservices", "aws", text)
   text <- gsub("amazon web services", "aws", text)
-  text <- gsub("mobileapp", "mobile", text)
+  text <- gsub("mobileapp ", "mobile ", text)
   text <- gsub("mobilepic", "mobile", text)
   text <- gsub("dockercon ", "docker ", text)
   
