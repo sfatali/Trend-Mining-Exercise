@@ -67,11 +67,12 @@ stopword_list = c(stopwords("english"), "use", "data", "microservice", "microser
                   "register", "week", "ready", "th", "ll", "latesting", "take", "look", "und", "london", "native", "talking",
                   "developing", "presentation", "top", "introduction", "watch", "team", "modern", "tomorrow", "ve", "started",
                   "speaking", "teams", "panel", "en", "must", "exhibit", "keynote", "der", "forward", "opportunities", "con", "series",
-                  "journey",  "week", "teams", "register", "architect", "last",
+                  "journey",  "week", "teams", "register", "architect", "last", "manage", "managing", "session", "free", "people", "easy", "engineer"#,
                   # Hierarhical clustering: Twitter part 2
-                  "meetup", "book", "guide", "summit", "article", "blog", "slides", "workshop", "journal", "video", "job", "future",
-                  "interesting", "talks", "cool", "awesome", "love", "things", "lessons", "manage", "managing", "podcast", "die", "principles",
-                  "free", "easy", "people", "engineer", "webinar", "session", "trends", "practices", "benefits")
+                  #"meetup", "book", "guide", "summit", "article", "blog", "slides", "workshop", "journal", "video", "job", "future",
+                  #"interesting", "talks", "cool", "awesome", "love", "things", "lessons", "podcast", "die", "principles",
+                  #"webinar", "trends", "practices", "benefits"
+                  )
 
 twitter_text <- paste (twitter_posts$Title, twitter_posts$Abstract_clean)
 removeSpecialChars <- function(x) gsub("[^a-zA-Z0-9 ]","",x)
